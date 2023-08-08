@@ -1,6 +1,10 @@
 ---
 test-cases:
   - summary: |
+      Просмотр католога товара
+    status: pass
+    
+  - summary: |
       Просмотр каталога товаров при работе с фильтрами
     status: fail
 
@@ -22,7 +26,6 @@ bugreports:
     actual-result: |
       Отображаются товары всех производителей без привязки к цене
 
-bugreports:
   - summary: |
       500 ошбка. Оформление заказ 
     environment: |
