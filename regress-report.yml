@@ -5,7 +5,7 @@ test-cases:
     status: fail
 
   - summary: |
-      
+      Оформление заказа 
     status: pass
 
 bugreports:
