@@ -1,9 +1,5 @@
 ---
-test-cases:
-  - summary: |
-      Просмотр католога товара
-    status: pass
-    
+test-cases:    
   - summary: |
       Просмотр каталога товаров при работе с фильтрами
     status: fail
