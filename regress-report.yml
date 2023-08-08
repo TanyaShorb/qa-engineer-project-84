@@ -9,14 +9,12 @@ test-cases:
     status: fail
 
 
-
 bugreports:
   - summary: |
-      Просмотр каталога товаров при работе с фильтрами
+      Не работает фильтр по цене 
     environment: |
-      Ссылка на билд/коммит/версия ПО и всего окружения
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     steps-to-reproduce: |
-    
     - Выбрать производителей товара "Apple" и "Samsung"
     - Активировать чек-бокс в наличие товара
     - Укаазать цену до 300
