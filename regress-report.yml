@@ -1,42 +1,83 @@
 ---
 test-cases:
-  - summary: |
-      Просмотр католога товара
-    status: pass
-    
-  - summary: |
-      Просмотр каталога товаров при работе с фильтрами
-    status: fail
+- summary: |
+    Добавление товара в корзину
+  status: pass
 
-  - summary: |
-      Оформление заказа 
-    status: fail
+- summary: |
+    Открытие карточки товара
+  status: pass
+  
+- summary: |
+    Проверка фильтра по цене
+  status: pass
+
+- summary: |
+    Удаление товара из корзины
+  status: pass
+  
+- summary: |
+    Очистка корзины
+  status: fail
+  
+- summary: |
+    Проверка отображения окна успешного оформления заказа
+  status: pass
+  
+- summary: |
+    Смена языка сайта
+  status: fail
+  
+- summary: |
+    Проверка кнопки Continue Shopping
+  status: pass
+  
+- summary: |
+    Проверка фильтра по производителю
+  status: pass
+  
+- summary: |
+    Проверка фильтра по ключевому слову
+  status: pass
 
 bugreports:
-  - summary: |
-      Не работает фильтр по цене 
-    environment: |
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps-to-reproduce: |
-    - Выбрать производителей товара "Apple" и "Samsung"
-    - Активировать чек-бокс в наличие товара
-    - Укаазать цену до 300
-    expected-result: |
-      Отображаются товары производетеля "Apple" и "Samsung", не привышающие ценну 300 
-    actual-result: |
-      Отображаются товары всех производителей без привязки к цене
+- summary: |
+    Не работает поиск по ключевому слову
+  environment: |
+    Google Chrome 109.0.5414.87 (Официальная сборка), (arm64)
+    OC macOS Ventura 13.1
+  steps-to-reproduce: |
+    В поле поиска ввести "hause"
+  expected-result: |
+    Поисковое поле выдает товары, содержащие ключевое слово
+  actual-result: |
+    Не работает поиск по ключевому слову.
+    Ошибка изображена на скриншоте search2.png
+    
+- summary: |
+    Не работает фильтр по цене
+  environment: |
+    Google Chrome 109.0.5414.87 (Официальная сборка), (arm64)
+    OC macOS Ventura 13.1
+  steps-to-reproduce: |
+    1. В фильтре Price выбрать "from 12"
+    2. В фильтре Price выбрать "to -765"
+  expected-result: |
+    Фильтр выдает товары согласно введеных значений.
+  actual-result: |
+    Не работает фильтр по цене, можно ввести отрицательные значения.
+    Ошибка изображена на скриншоте price2.png
 
-  - summary: |
-      500 ошбка. Оформление заказ 
-    environment: |
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps-to-reproduce: |
-    - Выбрать товар и нажать на кнопку "В корзину"
-    - Перейти в корзину с товаром
-    - Нажать на кнопку "Оформить закза товара" 
-    expected-result: |
-      Заказ успешно оформлен. Приходит ответ 200.
-    actual-result: |
-      Отображается 500 ошибка. 
-      {status: "500", title: "failed", type: "about:blank", detail: "failed"}
-      https://github.com/TanyaShorb/qa-engineer-project-84/blob/58b4376377a48642e6e4a2833aa08386d05544f8/500%20%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0.%20%D0%9E%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0..png
+- summary: |
+    Съехала верстка карточки товара
+  environment: |
+    Google Chrome 109.0.5414.87 (Официальная сборка), (arm64)
+    OC macOS Ventura 13.1
+  steps-to-reproduce: |
+    В фильтре Brand отметить чекбокс "OPPO"
+  expected-result: |
+    Фиксированный размер карточек товаров.
+  actual-result: |
+    Съехала верстка карточки товара.
+    Проблема проявляется в чекбоксах: OPPO, APPle, Infinix, Royal_Mirage, Lord - Al-Rehab, Saaf & Khaas, Baking Food Items, Dry Rose, Boho Decor, Golden.
+    Ошибка изображена на скриншоте brands.png
