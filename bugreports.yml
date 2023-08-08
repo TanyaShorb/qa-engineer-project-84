@@ -5,7 +5,7 @@
     Google Chrome Версия 115.0.5790.170 (Официальная сборка), (64 бит)
     ОС Windows 11
   steps-to-reproduce: |
-    1. Зайти на  главную страницу https://hexlet-products-store.vercel.app
+    1. Перейти на главную страницу https://hexlet-products-store.vercel.app
     2. Выбрать интересующий товар(товары) и добавить в корзину
     3. Перейти в корзину интернет магазина по ссылке : https://hexlet-products-store.vercel.app/cart
     4. Нажать кнопку Оформить заказ 
