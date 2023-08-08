@@ -8,10 +8,6 @@ test-cases:
       Оформление заказа 
     status: fail
 
-  - summary: |
-      Просмотр католога товара
-    status: pass
-
 bugreports:
   - summary: |
       Не работает фильтр по цене 
@@ -25,7 +21,6 @@ bugreports:
       Отображаются товары производетеля "Apple" и "Samsung", не привышающие ценну 300 
     actual-result: |
       Отображаются товары всех производителей без привязки к цене
-
 
 bugreports:
   - summary: |
@@ -42,5 +37,3 @@ bugreports:
       Отображается 500 ошибка. 
       {status: "500", title: "failed", type: "about:blank", detail: "failed"}
       https://github.com/TanyaShorb/qa-engineer-project-84/blob/58b4376377a48642e6e4a2833aa08386d05544f8/500%20%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0.%20%D0%9E%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0..png
-
-bugreports: []
