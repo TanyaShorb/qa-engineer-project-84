@@ -23,4 +23,18 @@ bugreports:
       Отображаются товары всех производителей без привязки к цене
 
 
+bugreports:
+  - summary: |
+      500 ошбка. Оформление заказ 
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: |
+    - Добавить любой товар в корзину
+    - 
+    - Укаазать цену до 300
+    expected-result: |
+      Отображаются товары удовлетворяющие критериям фильтра
+    actual-result: |
+      Отображаются товары всех производителей без привязки к цене
+
 bugreports: []
