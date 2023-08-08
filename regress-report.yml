@@ -8,6 +8,10 @@ test-cases:
       Оформление заказа 
     status: fail
 
+  - summary: |
+      Просмотр католога товара
+    status: pass
+
 bugreports:
   - summary: |
       Не работает фильтр по цене 
