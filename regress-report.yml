@@ -81,3 +81,7 @@ bugreports:
     Съехала верстка карточки товара.
     Проблема проявляется в чекбоксах: OPPO, APPle, Infinix, Royal_Mirage, Lord - Al-Rehab, Saaf & Khaas, Baking Food Items, Dry Rose, Boho Decor, Golden.
     Ошибка изображена на скриншоте brands.png
+
+
+    environment - без этого ТК не проходит 
+    
