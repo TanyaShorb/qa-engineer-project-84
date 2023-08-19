@@ -6,7 +6,6 @@
   prerequisites: |
     Открыта главная страницти магазина
   test-data: |
-    https://hexlet-products-store.vercel.app/
     Language: русский
   steps:
     - Нажать на любой товар (iPhone 9)
@@ -22,7 +21,6 @@
   prerequisites:
     Открыта главная страницти магазина
   test-data: |
-    https://hexlet-products-store.vercel.app/
     Language: русский
   steps:
     - Выбрать категорию товара "smartphones"
@@ -42,7 +40,6 @@
   prerequisites:
     Открыта главная страницти магазина
   test-data: |
-    https://hexlet-products-store.vercel.app/
     Language: русский
   steps:
     - Выбрать товар и нажать на кнопку "В корзину"
